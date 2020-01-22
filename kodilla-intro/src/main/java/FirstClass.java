@@ -35,5 +35,5 @@ public class FirstClass {
         afterLeaseNotebook.checkPrice();
         afterLeaseNotebook.checkWeight();
         afterLeaseNotebook.checkPriceToYear();
-    }
+            }
 }
