@@ -2,11 +2,15 @@ public class Notebook {
     int weight;
     int price;
     int year;
-    public Notebook(int weight, int price, int year) {
+    String name;
+
+    public Notebook(int weight, int price, int year, String name) {
         this.weight = weight;
         this.price = price;
         this.year = year;
-            }
+        this.name = name;
+    }
+
     public void checkPrice() {
         if (this.price < 600) {
             System.out.println("This notebook is very cheap.");
@@ -15,7 +19,20 @@ public class Notebook {
         } else {
             System.out.println("This notebook is expensive.");
         }
-            }
+    }
+
+    public String getWeight() {
+        return String.valueOf(this.weight);
+    }
+
+    public int getWeight2() {
+        return this.weight;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
     public void checkWeight() {
         if(this.weight < 1000) {
             System.out.println("This notebook is light.");
@@ -24,7 +41,8 @@ public class Notebook {
         } else {
             System.out.println ("This notebook is heavy.");
         }
-            }
+    }
+
     public void checkPriceToYear() {
         if(this.year < 2012 && this.price <= 500) {
             System.out.println("This notebook is very old but cheap.");
@@ -41,5 +59,5 @@ public class Notebook {
         } else {
             System.out.println("Lucky you! You pay a lot for the most modern notebook.");
         }
-        }
     }
+}
