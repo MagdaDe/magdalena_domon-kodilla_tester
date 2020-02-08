@@ -44,7 +44,7 @@ public class RandomNumbers {
 
     public static void main(String[] args) {
         RandomNumbers obiekt1 = new RandomNumbers();
-        int max = 30;
+        int max = 5000;
 
         int[] table1 = obiekt1.createRandomNumbers(max);
 
