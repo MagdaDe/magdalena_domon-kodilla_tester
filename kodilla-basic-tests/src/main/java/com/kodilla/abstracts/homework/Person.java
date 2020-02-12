@@ -2,9 +2,9 @@ package com.kodilla.abstracts.homework;
 
 public class Person {
 
-    String firstName;
-    int age;
-    Job job;
+    private String firstName;
+    private int age;
+    private Job job;
 
     public Person(String firstName, int age, Job job) {
         this.firstName = firstName;
